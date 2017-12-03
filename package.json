@@ -1,0 +1,20 @@
+{
+  "name": "atom-mobx",
+  "version": "0.1.0",
+  "description": "mobx Snippet   >> React state managemment >>  by @code4mk",
+  "keywords": [
+    "react",
+    "mobx",
+    "snippet",
+    "mobxjs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/code4mk/atom-mobx"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,119 @@
+########################################################
+#            Atom mobX Snippet                        #
+#                @code4mk                            #
+#####################################################
+
+'.source.js':
+
+  "For->mobX":
+    "prefix": "mbx-"
+    "body": """
+
+    """
+  "import mobx->mobX":
+    "prefix": "mbx-import"
+    "body": """
+    import { $1 } from 'mobx'
+    """
+  "import mobx-react ->mobX":
+    "prefix": "mbx-import2"
+    "body": """
+    import { $1 } from 'mobx-react'
+    """
+
+  "observable (i)->mobX":
+    "prefix": "mbxi-observable"
+    "body": """
+    observable
+    """
+  "computed (i)->mobX":
+    "prefix": "mbxi-computed"
+    "body": """
+    computed
+    """
+  "action (i)->mobX":
+    "prefix": "mbxi-action"
+    "body": """
+    action
+    """
+  "observer (i)->mobX":
+    "prefix": "mbxi-observer"
+    "body": """
+    observer
+    """
+  "autorun (i)->mobX":
+    "prefix": "mbxi-autorun"
+    "body": """
+    autorun
+    """
+  "inject (i)->mobX":
+    "prefix": "mbxi-inject"
+    "body": """
+    inject
+    """
+  "provider (i)->mobX":
+    "prefix": "mbxi-provider"
+    "body": """
+    Provider
+    """
+  "extendObservable (i)->mobX":
+    "prefix": "mbxi-extendObservable"
+    "body": """
+    extendObservable, toJS
+    """
+  "@observable ->mobX":
+    "prefix": "mbx-observable"
+    "body": """
+    @observable
+    """
+  "@action ->mobX":
+    "prefix": "mbx-action"
+    "body": """
+    @action
+    """
+  "@computed->mobX":
+    "prefix": "mbx-computed"
+    "body": """
+    @computed
+    """
+  "@inject->mobX":
+    "prefix": "mbx-inject"
+    "body": """
+    @inject('X$1')
+    """
+
+  "@action method ->mobX":
+    "prefix": "mbx-method"
+    "body": """
+    x$1(y) {
+      $2
+    }
+    """
+  "@computed method ->mobX":
+    "prefix": "mbx-method2"
+    "body": """
+    get x$1() {
+      $2
+    }
+    """
+  "provider  ->mobX":
+    "prefix": "mbx-provider"
+    "body": """
+    <Provider>
+      $1
+    </Provider>
+    """
+  "constructor  ->mobX":
+    "prefix": "mbx-constructor"
+    "body": """
+    constructor() {
+      $1
+    }
+    """
+  "extendObservable ->mobX":
+    "prefix": "mbx-extendObservable"
+    "body": """
+    extendObservable(this, {
+      $1
+    },state)
+    """

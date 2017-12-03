@@ -1,0 +1,20 @@
+########################################################
+#            Atom mobX Snippet                        #
+#                @code4mk                            #
+#####################################################
+
+'.source.js':
+
+  "component mbx ->mobX":
+    "prefix": "mbx-"
+    "body": """
+      import {observable,action} from 'mobx'
+      class MyComponent{
+          @observable name = "mobX atom package"
+          $1
+      }
+      // var store = window.store = new MyComponent
+      //export default store
+      // or //
+      export default window.__STATE = new MyComponent(window.__STATE)
+    """
